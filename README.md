@@ -1,2 +1,9 @@
-# Galaxy-Strike
-Galaxy Strike is an arcade-style rail shooter built while learning Unity fundamentals through Rick Davidson’s course, focusing on prefab architecture, physics systems, scene dependencies, and real-world debugging with Git version control.
+What I Learned
+Working on Galaxy Strike helped me move beyond simply following instructions and start understanding how Unity actually works internally.
+One of the biggest lessons was understanding the difference between scene objects and prefab assets. I learned that deleting a prefab from the Project window removes the asset and its GUID, which breaks references in the scene. Unity links prefabs using GUIDs, not names — and recreating a prefab with the same name does not reconnect it. That experience forced me to understand Unity’s asset database instead of treating it like a black box.
+I also gained clarity on the distinction between Update() and FixedUpdate(), and when to use each. Input handling belongs in Update(), while physics interactions should be handled in FixedUpdate() to maintain consistency across frame rates. Understanding Time.deltaTime helped me implement frame-independent movement, ensuring gameplay behaves consistently on different hardware.
+Through implementing shooting, movement, and collisions, I learned how Rigidbody, velocity, AddForce, MovePosition, and trigger systems interact. I now understand the difference between direct transform manipulation and physics-aware movement, and why mixing them incorrectly can cause unpredictable behavior.
+Another major takeaway was dependency awareness. I encountered NullReferenceExceptions when a prefab expected a manager object that didn’t exist in the scene. This helped me understand scene-level architecture and the importance of defensive coding — never assuming a reference exists without checking.
+Finally, I integrated Git into this project after realizing that Undo is not a reliable safety net. Version control provides structured checkpoints, protects against accidental asset deletion, and encourages disciplined development habits.
+Overall, this project shifted my mindset from “making things work” to understanding systems, architecture, and safe development workflow.
+
