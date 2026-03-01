@@ -3,18 +3,23 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] GameObject destroyedVFX;
+    [SerializeField] int hitPoints = 3;
 
-    GameSceneManager gameSceneManager;
 
-    private void Start() 
+    private void OnTriggerEnter(Collider other)
     {
-        gameSceneManager = FindFirstObjectByType<GameSceneManager>();    
+        hitPoints--;
+        //hitPoints = hitPoints - 1;
+
+        ProcessHit();
     }
 
-    private void OnTriggerEnter(Collider other) 
+    private void ProcessHit()
     {
-        gameSceneManager.ReloadLevel();
-        Instantiate(destroyedVFX, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        if (hitPoints <= 0)
+        {
+            Instantiate(destroyedVFX, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
     }
 }
