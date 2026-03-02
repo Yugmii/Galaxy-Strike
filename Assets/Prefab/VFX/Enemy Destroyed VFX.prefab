@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3045858387028667457, guid: 91bcb83ab4af140668a2b076141f77bf, type: 3}
       propertyPath: m_Name
-      value: Base Destroyed Ship VFX
+      value: Enemy Destroyed VFX
       objectReference: {fileID: 0}
     - target: {fileID: 4563107487759079475, guid: 91bcb83ab4af140668a2b076141f77bf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50,6 +50,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4563107487759079475, guid: 91bcb83ab4af140668a2b076141f77bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856881712314857294, guid: 91bcb83ab4af140668a2b076141f77bf, type: 3}
+      propertyPath: moveWithTransform
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

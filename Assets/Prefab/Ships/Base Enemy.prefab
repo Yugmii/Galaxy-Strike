@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 2393195188496874766}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.806, y: 13.4, z: -39.5}
-  m_LocalScale: {x: 15.091327, y: 7.441617, z: 4.212395}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6606038702283917187}
@@ -174,8 +174,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.34, y: 9, z: 13.5}
-  m_Center: {x: 31.3, y: 14.09, z: -38.3}
+  m_Size: {x: 3, y: 3, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6428789440566669693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,4 +190,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   destroyedVFX: {fileID: 2106229512013149412, guid: a0667160eef934c18adf0e9df61501db, type: 3}
   hitPoints: 3
-  scoreValue: 10
